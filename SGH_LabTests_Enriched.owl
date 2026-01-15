@@ -1,0 +1,1480 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33"
+         xmlns="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#">
+
+<owl:Ontology rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33"/>
+
+<owl:ObjectProperty rdf:about="#belongsTo">
+  <rdfs:domain rdf:resource="#LabTest"/>
+  <rdfs:range rdf:resource="#TestCategory"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#hasResult">
+  <rdfs:domain rdf:resource="#Patient"/>
+  <rdfs:range rdf:resource="#TestResult"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isResultof">
+  <rdfs:domain rdf:resource="#LabTest"/>
+  <rdfs:range rdf:resource="#TestResult"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#usesSampleType">
+  <rdfs:domain rdf:resource="#LabTest"/>
+  <rdfs:range rdf:resource="#SampleType"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#usesTestMethod">
+  <rdfs:domain rdf:resource="#LabTest"/>
+  <rdfs:range rdf:resource="#TestMethod"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#CategoryName">
+  <rdfs:domain rdf:resource="#TestCategory"/>
+  <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#description">
+  <rdfs:domain rdf:resource="#LabTest"/>
+  <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#hasName">
+  <rdfs:domain rdf:resource="#LabTest"/>
+  <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#hasNormalRange">
+  <rdfs:domain rdf:resource="#LabTest"/>
+  <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#hasUnit">
+  <rdfs:domain rdf:resource="#LabTest"/>
+  <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#applied_to_vein_type">
+  <rdfs:domain rdf:resource="#LabTest"/>
+  <rdfs:range rdf:resource="#Vein_Type"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_Gender">
+  <rdfs:domain rdf:resource="#LabTest"/>
+  <rdfs:range rdf:resource="#Gender"/>
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  <rdfs:range>
+    <rdfs:Datatype>
+      <owl:oneOf>
+        <rdf:Description>
+      <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</rdf:first>
+        <rdf:rest>
+        <rdf:Description>
+      <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</rdf:first>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+        </rdf:Description>
+        </rdf:rest>
+        </rdf:Description>
+      </owl:oneOf>
+    </rdfs:Datatype>
+  </rdfs:range>
+</owl:ObjectProperty>
+
+<owl:DatatypeProperty rdf:about="#ResultValue">
+  <rdfs:domain rdf:resource="#TestResult"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#requiresFasting">
+  <rdfs:domain rdf:resource="#LabTest"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#applied_to_Vein_Type">
+  <rdfs:domain rdf:resource="#LabTest"/>
+  <rdfs:range>
+    <rdfs:Datatype>
+      <owl:oneOf>
+        <rdf:Description>
+      <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arterial</rdf:first>
+        <rdf:rest>
+        <rdf:Description>
+      <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Venous</rdf:first>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+        </rdf:Description>
+        </rdf:rest>
+        </rdf:Description>
+      </owl:oneOf>
+    </rdfs:Datatype>
+  </rdfs:range>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_age_range">
+  <rdfs:domain rdf:resource="#LabTest"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+</owl:DatatypeProperty>
+
+<owl:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+
+<owl:Class rdf:about="#LabTest"/>
+
+<owl:Class rdf:about="#TestCategory"/>
+
+<owl:Class rdf:about="#Patient"/>
+
+<owl:Class rdf:about="#TestResult"/>
+
+<owl:Class rdf:about="#SampleType"/>
+
+<owl:Class rdf:about="#Vein_Type"/>
+
+<owl:Class rdf:about="#Gender">
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{"Male" , "Female"}</rdfs:comment>
+</owl:Class>
+
+<owl:Class rdf:about="#TestMethod"/>
+
+<owl:NamedIndividual rdf:about="#Plasma">
+  <rdf:type rdf:resource="#SampleType"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Serum">
+  <rdf:type rdf:resource="#SampleType"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ammonia">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male_and_Femal"/>
+  <usesSampleType rdf:resource="#Plasma"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">31-123</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ug/dL</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Blood">
+  <rdf:type rdf:resource="#SampleType"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#BloodGlucoseTest">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#MetabolicPanel"/>
+  <usesSampleType rdf:resource="#Blood"/>
+  <usesTestMethod rdf:resource="#Spectrophotometry"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BloodGlucose</hasName>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">70-110</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mg/dL</hasUnit>
+  <requiresFasting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</requiresFasting>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#MetabolicPanel">
+  <rdf:type rdf:resource="#TestCategory"/>
+  <requiresFasting rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MetabolicPanel</requiresFasting>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Spectrophotometry">
+  <rdf:type rdf:resource="#TestMethod"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Pleural_fluid">
+  <rdf:type rdf:resource="#SampleType"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Urine">
+  <rdf:type rdf:resource="#SampleType"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#AFP">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_CANCER_IMMUNOASSAY"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.89-8.78</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ng/mL</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CHEMISTRY_CANCER_IMMUNOASSAY">
+  <rdf:type rdf:resource="#TestCategory"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ALANINE_AMINOTRANSFERASE">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male_and_Femal"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0-55</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">U/L</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1742-6</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CHEMISTRY_GENERAL">
+  <rdf:type rdf:resource="#TestCategory"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male_and_Femal"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8-78</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">U/L</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Male_and_Femal">
+  <rdf:type rdf:resource="#Gender"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ALBUMIN">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male_and_Femal"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.5-5.2</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">g/DI</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1747-5</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Albumin [Mass/volume] in Body fluid</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ALKALINE_PHSOPHATASE">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male_and_Femal"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">40-150</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">U/L</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1777-2</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alkaline phosphatase.bone [Enzymatic activity/volume] in Serum or Plasma</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#AMYLASE">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male_and_Femal"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25-125</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">U/L</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1795-4</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amylase [Enzymatic activity/volume] in Body fluid</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ANTI-CCР">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_INFLAMMATORY_DISORDER_-_IMMUNOASSAY"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0-5</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">U/mL</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CHEMISTRY_INFLAMMATORY_DISORDER_-_IMMUNOASSAY">
+  <rdf:type rdf:resource="#TestCategory"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ANTI-TG">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_PROTEIN"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0-4.11</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IU/mL</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CHEMISTRY_PROTEIN">
+  <rdf:type rdf:resource="#TestCategory"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ANTI-TPО">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_PROTEIN"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0-5.61</hasUnit>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IU/mL</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ASO">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_PROTEIN"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;50.0</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IU/mL</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ASPARATE_AMINOTRANSFERASE">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male_and_Femal"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-34</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">U/L</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1920-8</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#BLADDER_URINE_-_URETER_SUPRAPUBIC_-_CYSTOSCOPIC_URINE">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#MICROALBUMINE"/>
+  <usesSampleType rdf:resource="#Urine"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">No growth</hasNormalRange>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#MICROALBUMINE">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_BONE_DISEASE_IMMUNOASSAY"/>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">58448-2</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microalbumin ug/min [Mass/time] in 24 hour Urine</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#BNP">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_BONE_DISEASE_IMMUNOASSAY"/>
+  <usesSampleType rdf:resource="#Plasma"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;100
+&gt; or equal 100</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pg/ml</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CHEMISTRY_BONE_DISEASE_IMMUNOASSAY">
+  <rdf:type rdf:resource="#TestCategory"/>
+  <belongsTo rdf:resource="#CHEMISTRY_BONE_DISEASE_IMMUNOASSAY"/>
+  <usesSampleType rdf:resource="#Urine"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0-30</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ug/mL</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#B_HCG">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_FERTILITY_/_PREGNANCY_IMMUNOASSAY"/>
+  <has_Gender rdf:resource="#Female"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt; 5.00</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mIU/mL</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CHEMISTRY_FERTILITY_/_PREGNANCY_IMMUNOASSAY">
+  <rdf:type rdf:resource="#TestCategory"/>
+  <belongsTo rdf:resource="#CHEMISTRY_FERTILITY_/_PREGNANCY_IMMUNOASSAY"/>
+  <has_Gender rdf:resource="#Female"/>
+  <usesSampleType rdf:resource="#Urine"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt; 5.0</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mIU/mL:</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Female">
+  <rdf:type rdf:resource="#Gender"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C-PEPTIDE">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_ANEMIA-METABOLIC_IMMUNOASSAY"/>
+  <usesSampleType rdf:resource="#Plasma"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0-5.19</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ng/mL</hasUnit>
+  <requiresFasting rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8-12</requiresFasting>
+  <requiresFasting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</requiresFasting>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1986-9</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C peptide [Mass/volume] in Serum or Plasma</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CHEMISTRY_ANEMIA-METABOLIC_IMMUNOASSAY">
+  <rdf:type rdf:resource="#TestCategory"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C-PEPTIDES">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_BONE_DISEASE_IMMUNOASSAY"/>
+  <usesSampleType rdf:resource="#Plasma"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0-5.191</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ng/mL</hasUnit>
+  <requiresFasting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</requiresFasting>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1986-9</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C peptide [Mass/volume] in Serum or Plasma</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C3">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_INFLAMMATORY_DISORDER"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.82-1.85</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">g/L</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CHEMISTRY_INFLAMMATORY_DISORDER">
+  <rdf:type rdf:resource="#TestCategory"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C4">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_INFLAMMATORY_DISORDER"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.15-0.53</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">g/L</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4498-2</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Complement C4 [Mass/volume] in Serum or Plasma</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CA125">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_CANCER_IMMUNOASSAY"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0-35</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">U/mL</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CA19-9">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_CANCER_IMMUNOASSAY"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0-37</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">U/mL</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">24108-3</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cancer Ag 19-9 [Units/volume] in Serum or Plasma</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CALCIUM">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male_and_Femal"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8.4-10.2</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mg/dL</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18488-7</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calcium [Mass/volume] in 24 hour Urine</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CALPROTECTIN">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_PROTEIN"/>
+  <usesSampleType rdf:resource="#Stool_feces"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;50</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">µg/g</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">38445-3</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calprotectin [Mass/mass] in Stool</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Stool_feces">
+  <rdf:type rdf:resource="#SampleType"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CARBAMAZEPINE">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_THERAPUTICE_DRUG_MONITORING"/>
+  <usesSampleType rdf:resource="#Plasma"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4-12</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ug/mL</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3432-2</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carBAMazepine [Mass/volume] in Serum or Plasma</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CHEMISTRY_THERAPUTICE_DRUG_MONITORING">
+  <rdf:type rdf:resource="#TestCategory"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CA_15-3">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_CANCER_IMMUNOASSAY"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0-31.3</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">U/mL</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6875-9</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cancer Ag 15-3 [Units/volume] in Serum or Plasma</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CEA">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_CANCER_IMMUNOASSAY"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0-5</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ng/mL</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CEREBROSPINAL_FLUID_GRAM_STAIN">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#MICROALBUMINE"/>
+  <usesSampleType rdf:resource="#Cerebrospinal_Fluid"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">No microorganism</hasNormalRange>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Cerebrospinal_Fluid">
+  <rdf:type rdf:resource="#SampleType"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CHOLESTEROL">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male_and_Femal"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;200</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mmol/L</hasUnit>
+  <requiresFasting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</requiresFasting>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2093-3</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cholesterol [Mass/volume] in Serum or Plasma</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CK-MB_F">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_CANCER_IMMUNOASSAY"/>
+  <usesSampleType rdf:resource="#Plasma"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0-3.1</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ng/mL</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32673-6</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Creatine kinase.MB [Enzymatic activity/volume] in Serum or Plasma</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CK-MB__M">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_CANCER_IMMUNOASSAY"/>
+  <usesSampleType rdf:resource="#Plasma"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0-5.2</hasUnit>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ng/mL</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32673-6</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Creatine kinase.MB [Enzymatic activity/volume] in Serum or Plasma</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CK_F">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_CANCER_IMMUNOASSAY"/>
+  <usesSampleType rdf:resource="#Plasma"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">29-1</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">U/L</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CK_M">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_CANCER_IMMUNOASSAY"/>
+  <usesSampleType rdf:resource="#Plasma"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">30-200</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">U/L</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CLORIDE">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male_and_Femal"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">98-107</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mmol/L</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2075-0</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chloride [Moles/volume] in Serum or Plasma</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CORTISOL">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_ANEMIA-METABOLIC_IMMUNOASSAY"/>
+  <usesSampleType rdf:resource="#Plasma"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.7 -19.4</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ug/dL</hasUnit>
+  <requiresFasting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</requiresFasting>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2142-8</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cortisol [Mass/volume] in Saliva (oral fluid)</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CREATINE_KINASE_F">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Female"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">29-168</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">U/L</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2157-6</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Creatine kinase [Enzymatic activity/volume] in Serum or Plasma</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CREATINE_KINASE_M">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">30-200</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">U/L</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32673-6</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Creatine kinase.MB [Enzymatic activity/volume] in Serum or Plasma</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Male">
+  <rdf:type rdf:resource="#Gender"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CREATININE_24Hrs">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_BONE_DISEASE_IMMUNOASSAY"/>
+  <usesSampleType rdf:resource="#Urine"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">710-1650</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mg/24h</hasUnit>
+  <requiresFasting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</requiresFasting>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20624-3</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Creatinine [Mass/volume] in 24 hour Urine</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CREATININE_CLEARANCE">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_BONE_DISEASE_IMMUNOASSAY"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">66-163</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mL/min</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CREATININE_F">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_ANEMIA-METABOLIC_IMMUNOASSAY"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[0.72-1.25]</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mg/dL</hasUnit>
+  <requiresFasting rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fulse</requiresFasting>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">38483-4</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Creatinine [Mass/volume] in Blood</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CREATININE_M">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_BONE_DISEASE_IMMUNOASSAY"/>
+  <usesSampleType rdf:resource="#Urine"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">63-166</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mg/dL</hasUnit>
+  <requiresFasting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</requiresFasting>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">38483-4</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Creatinine [Mass/volume] in Blood</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CRP">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_INFLAMMATORY_DISORDER"/>
+  <usesSampleType rdf:resource="#Plasma"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;0.5</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mg/dL</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CSF">
+  <rdf:type rdf:resource="#SampleType"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Chloride-C.S.F">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male_and_Femal"/>
+  <usesSampleType rdf:resource="#CSF"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Cholesterol_-_Pleural_Fluid">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male_and_Femal"/>
+  <usesSampleType rdf:resource="#Pleural_fluid"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Cyclosporin">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_THERAPUTICE_DRUG_MONITORING"/>
+  <usesSampleType rdf:resource="#Whole_blood"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">100-300</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ng/ml</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3520-4</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cycloSPORINE [Mass/volume] in Blood</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Whole_blood">
+  <rdf:type rdf:resource="#SampleType"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#DIGOXIN">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_THERAPUTICE_DRUG_MONITORING"/>
+  <usesSampleType rdf:resource="#Plasma"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.8-2</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ng/mL</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10535-3</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Digoxin [Mass/volume] in Serum or Plasma</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#DIRECT_BILIRUBIN">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male_and_Femal"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0-0.5</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mg/dL</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1968-7</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bilirubin.direct [Mass/volume] in Serum or Plasma</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#DIRECT_LDL">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male_and_Femal"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">= &lt; 100</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mg/dL</hasUnit>
+  <requiresFasting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</requiresFasting>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">57698-3</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lipid panel with direct LDL - Serum or Plasma</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ESTRADIOL_F">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_FERTILITY_/_PREGNANCY_IMMUNOASSAY"/>
+  <has_Gender rdf:resource="#Female"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">21–251</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pg/mL</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">35384-7</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estradiol (E2) [Mass/volume] in Serum or Plasma by High sensitivity method</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ESTRADIOL_M">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_FERTILITY_/_PREGNANCY_IMMUNOASSAY"/>
+  <has_Gender rdf:resource="#Male"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11-44</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pg/mL</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">35384-7</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estradiol (E2) [Mass/volume] in Serum or Plasma by High sensitivity method</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#FERRITIN_F">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_THERAPUTICE_DRUG_MONITORING"/>
+  <usesSampleType rdf:resource="#Plasma"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.63-204.0</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ng/mL</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2276-4</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ferritin [Mass/volume] in Serum or Plasma</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#FERRITIN_M">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_ANEMIA-METABOLIC_IMMUNOASSAY"/>
+  <usesSampleType rdf:resource="#Plasma"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">21.81-274.66</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ng/mL</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2276-4</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ferritin [Mass/volume] in Serum or Plasma</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#FOLIC_ACID">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_ANEMIA-METABOLIC_IMMUNOASSAY"/>
+  <usesSampleType rdf:resource="#Plasma"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.1-20.5</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ng/mL</hasUnit>
+  <requiresFasting rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8-12</requiresFasting>
+  <requiresFasting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</requiresFasting>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#FREE_T4">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_PROTEIN"/>
+  <usesSampleType rdf:resource="#Plasma"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.7-1.48</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ng/dL</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#FSH_F">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_FERTILITY_/_PREGNANCY_IMMUNOASSAY"/>
+  <has_Gender rdf:resource="#Female"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.03–8.08</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mIU/mL</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#FSH_M">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_FERTILITY_/_PREGNANCY_IMMUNOASSAY"/>
+  <has_Gender rdf:resource="#Male"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.95-11.95</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mIU/mL</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#GAMMA-GLUTAMYL_TRANS_FERASE_F">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Female"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9-36</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">U/L</hasUnit>
+  <requiresFasting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</requiresFasting>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2324-2</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gamma glutamyl transferase [Enzymatic activity/volume] in Serum or Plasma</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#GAMMA-GLUTAMYL_TRANS_FERASE_M">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12-64</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">U/L</hasUnit>
+  <requiresFasting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</requiresFasting>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2324-2</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gamma glutamyl transferase [Enzymatic activity/volume] in Serum or Plasma</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Glucose_C.S.F">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male_and_Femal"/>
+  <usesSampleType rdf:resource="#Cerebrospinal_Fluid"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">40–70</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mg/dL</hasUnit>
+  <requiresFasting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</requiresFasting>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#HbA1c">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_BONE_DISEASE_IMMUNOASSAY"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;5.7%(Normal)
+5.7%-6.4%(Prediabetes)
+6.5% or above(Diabetes)</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">%</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IGE">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_INFLAMMATORY_DISORDER"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1-100</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IU/mL</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#INSULIN">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_BONE_DISEASE_IMMUNOASSAY"/>
+  <usesSampleType rdf:resource="#Plasma"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.6-24.9</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uU/mL</hasUnit>
+  <requiresFasting rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ture</requiresFasting>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20448-7</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Insulin [Units/volume] in Serum or Plasma</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#INTACT_PTH">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_BONE_DISEASE_IMMUNOASSAY"/>
+  <usesSampleType rdf:resource="#Plasma"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0-68.3</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pg/mL</hasUnit>
+  <requiresFasting rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8-12</requiresFasting>
+  <requiresFasting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</requiresFasting>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2731-8</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parathyrin.intact [Mass/volume] in Serum or Plasma</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IRON_F">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Female"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50-170</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ug/dL</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2498-4</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iron [Mass/volume] in Serum or Plasma</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IRON_M">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">65-175</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ug/dL</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2498-4</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iron [Mass/volume] in Serum or Plasma</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#LACTATE_DEHYDROGENASE">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male_and_Femal"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">125-220</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">U/L</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14803-1</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lactate dehydrogenase [Enzymatic activity/volume] in Body fluid by Lactate to pyruvate reaction</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#LACTIC_ACID">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male_and_Femal"/>
+  <usesSampleType rdf:resource="#Plasma"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.5-2.2</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mmol/L</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#LDH-C.S.F">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <usesSampleType rdf:resource="#Cerebrospinal_Fluid"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#LH_F">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_FERTILITY_/_PREGNANCY_IMMUNOASSAY"/>
+  <has_Gender rdf:resource="#Female"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.8–11.78</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mIU/mL</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#LH_M">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_FERTILITY_/_PREGNANCY_IMMUNOASSAY"/>
+  <has_Gender rdf:resource="#Male"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.57-12.07</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mIU/mL</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#LIPASE">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male_and_Femal"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8-78</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">U/L</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15212-4</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lipase [Enzymatic activity/volume] in Body fluid</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#MAGNISIUM">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male_and_Femal"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.6-2.6</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mg/dL</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19123-9</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Magnesium [Mass/volume] in Serum or Plasma</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#MEASLES_ABS_IGG">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_PROTEIN"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13.5 negative</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AU/mL</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#MUMPS_IGG">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_PROTEIN"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9.0 negative</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AU/mL</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Osmolality_Serum">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male_and_Femal"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">285-295</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mOsm/kg</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#PCT">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_INFLAMMATORY_DISORDER_-_IMMUNOASSAY"/>
+  <usesSampleType rdf:resource="#Plasma"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt; 0.1</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ng/ml</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#PHENOBARBITAL">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_THERAPUTICE_DRUG_MONITORING"/>
+  <usesSampleType rdf:resource="#Plasma"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15.0-40.0</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ug/mL</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3948-7</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PHENobarbital [Mass/volume] in Serum or Plasma</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#PHENYTOIN">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_THERAPUTICE_DRUG_MONITORING"/>
+  <usesSampleType rdf:resource="#Plasma"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10.0-20.0</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ug/mL</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3968-5</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenytoin [Mass/volume] in Serum or Plasma</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#PHOSPHORUS">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male_and_Femal"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.5-4.5</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mg/dL</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#POTASSIUM">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male_and_Femal"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.5-5.1</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mmol/L</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6298-4</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Potassium [Moles/volume] in Blood</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#PROGESTERONE_F">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_FERTILITY_/_PREGNANCY_IMMUNOASSAY"/>
+  <has_Gender rdf:resource="#Female"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;0.1-0.3</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ng/mL</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2839-9</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Progesterone [Mass/volume] in Serum or Plasma</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#PROGESTERONE_M">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_FERTILITY_/_PREGNANCY_IMMUNOASSAY"/>
+  <has_Gender rdf:resource="#Male"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.1-0.2</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ng/mL</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2839-9</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Progesterone [Mass/volume] in Serum or Plasma</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#PROLACTIN_F">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_FERTILITY_/_PREGNANCY_IMMUNOASSAY"/>
+  <has_Gender rdf:resource="#Serum"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.25-2.75</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ng/dL</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20568-2</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prolactin [Mass/volume] in Serum or Plasma by Immunoassay</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#PROLACTIN_M">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_FERTILITY_/_PREGNANCY_IMMUNOASSAY"/>
+  <has_Gender rdf:resource="#Male"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.46-19.4</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ng/mL</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20568-2</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prolactin [Mass/volume] in Serum or Plasma by Immunoassay</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#PSA-FREE">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_CANCER_IMMUNOASSAY"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0-0.5</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ng/mL</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Protein_C.S.F">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male_and_Femal"/>
+  <usesSampleType rdf:resource="#Cerebrospinal_Fluid"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15 – 40</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mg/dL</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#SODIUM">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male_and_Femal"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">136-145</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mmol/L</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2956-1</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sodium [Moles/time] in 24 hour Urine</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Sperm_Normal_Morphology">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#MICROALBUMINE"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&gt;=4%</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">%</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Sperm_Progressive_Motility">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#MICROALBUMINE"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&gt;32%</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">%</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Sperm_Total_Motility">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#MICROALBUMINE"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&gt;40%</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">%</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#TACROLIMUS">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_THERAPUTICE_DRUG_MONITORING"/>
+  <usesSampleType rdf:resource="#Whole_blood"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-16</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ng/ml</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11253-2</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tacrolimus [Mass/volume] in Blood</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#TERSTERONE_F">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_FERTILITY_/_PREGNANCY_IMMUNOASSAY"/>
+  <has_Gender rdf:resource="#Female"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.25-2.75</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ng/dL</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25987-9</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Testosterone Free [Moles/volume] in Serum or Plasma by Radioimmunoassay (RIA)</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#TERSTERONE_M">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_FERTILITY_/_PREGNANCY_IMMUNOASSAY"/>
+  <has_Gender rdf:resource="#Male"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.6-34.0</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ng/dL</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#THEOPHYLINE">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_THERAPUTICE_DRUG_MONITORING"/>
+  <usesSampleType rdf:resource="#Plasma"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10-20</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ug/mL</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4049-3</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Theophylline [Mass/volume] in Serum or Plasma</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#TOTAL_BILIRUBIN">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male_and_Femal"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.2-1.2</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mg/dL</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1975-2</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bilirubin.total [Mass/volume] in Serum or Plasma</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#TOTAL_PROTEIN">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male_and_Femal"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6-8</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">g/dL</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#TRIGLYCERIDES">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male_and_Femal"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">150-199</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mg/dL</hasUnit>
+  <requiresFasting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</requiresFasting>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2571-8</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Triglyceride [Mass/volume] in Serum or Plasma</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#TSH">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_PROTEIN"/>
+  <usesSampleType rdf:resource="#Plasma"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.35-54.94</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ulU/ml</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#UIBC__TIBC">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male_and_Femal"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">250-400</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ug/dL</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ULTRA_HDL">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male_and_Femal"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">40–59</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mg/dL</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2085-9</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cholesterol in HDL [Mass/volume] in Serum or Plasma</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#UREANITROGEN_F">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Female"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9.8-20.1</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mg/dL</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3094-0</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Urea nitrogen [Mass/volume] in Serum or Plasma</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#UREANITROGEN_M">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8.4-25.7</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mg/dL</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3094-0</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Urea nitrogen [Mass/volume] in Serum or Plasma</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#URIC_ACID_F">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Female"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.6-6</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mg/dL</hasUnit>
+  <requiresFasting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</requiresFasting>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#URIC_ACID_M">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.5-7.2</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mg/dL</hasUnit>
+  <requiresFasting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</requiresFasting>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#URINE_CALCIUM">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male_and_Femal"/>
+  <usesSampleType rdf:resource="#Urine"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">100-300</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mg/24h</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#URINE_Protein">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male_and_Femal"/>
+  <usesSampleType rdf:resource="#Urine"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1–14</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mg/dL</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#URINE_SODIUM">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male_and_Femal"/>
+  <usesSampleType rdf:resource="#Urine"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">41-118</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mmol/L</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#VALPROIC_ACID">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_THERAPUTICE_DRUG_MONITORING"/>
+  <usesSampleType rdf:resource="#Plasma"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt; 30 minutes (50-100)</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ug/mL</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#VARICELLA_ZOSTER_IGG_ABS">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_PROTEIN"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&gt;150 graded negative.</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mlU/mLL</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#VITAMINE_D">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_ANEMIA-METABOLIC_IMMUNOASSAY"/>
+  <usesSampleType rdf:resource="#Plasma"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20-50</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ng/mL</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#VITAMIN_B12">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_ANEMIA-METABOLIC_IMMUNOASSAY"/>
+  <usesSampleType rdf:resource="#Plasma"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">187-883</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pg/mL</hasUnit>
+  <requiresFasting rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8-12</requiresFasting>
+  <requiresFasting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</requiresFasting>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16695-9</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cobalamin (Vitamin B12) [Mass/volume] in Blood</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ZINC">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male_and_Femal"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">46-150</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ug/dL</hasUnit>
+  <hasLOINCCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5763-8</hasLOINCCode>
+  <hasLOINCName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zinc [Mass/volume] in Serum or Plasma</hasLOINCName>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#free_T3">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_PROTEIN"/>
+  <usesSampleType rdf:resource="#Plasma"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.71-3.71</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pg/mL</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#GENTAMICIN_(Peak_&amp;_Trough)">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_THERAPUTICE_DRUG_MONITORING"/>
+  <usesSampleType rdf:resource="#Plasma"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trough range: 0.5-2.0</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ug/mL</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#LDH_–_Pleural_Fluid">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male_and_Femal"/>
+  <usesSampleType rdf:resource="#Pleural_fluid"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#POTASSIUM,_RANDOM_URINE">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male_and_Femal"/>
+  <usesSampleType rdf:resource="#Urine"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0-20</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mmol/L</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Protein_–_Pleural_Fluid">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male_and_Femal"/>
+  <usesSampleType rdf:resource="#Pleural_fluid"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Sperm_Count/ml">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#MICROALBUMINE"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&gt;= 15 million/ml</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ml</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Sperm_Count_/_ejaculate">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#MICROALBUMINE"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&gt;= 39 million/ejaculate</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ejaculate</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#TROP_I_(HIGH_SENSITIVE)_M">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_CANCER_IMMUNOASSAY"/>
+  <usesSampleType rdf:resource="#Plasma"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0-34.2</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pg/mL</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#TROP_I_(HIGH_SENSITIVE)__F">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_CANCER_IMMUNOASSAY"/>
+  <usesSampleType rdf:resource="#Plasma"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0-15.6</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pg/mL</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#UREA,_24_HOURS_URINE">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male_and_Femal"/>
+  <usesSampleType rdf:resource="#Urine"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12-20</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">g/day</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#URIC_ACID,_24_HOURS_URINE">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_GENERAL"/>
+  <has_Gender rdf:resource="#Male_and_Femal"/>
+  <usesSampleType rdf:resource="#Urine"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">250-750</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mg/day</hasUnit>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#URINE_CULTURE_MSU_/_CSU_(C_URINE)">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#MICROALBUMINE"/>
+  <usesSampleType rdf:resource="#Urine"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">No growth</hasNormalRange>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#URINE_for_CANDIDA_(C_URINE)">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#MICROALBUMINE"/>
+  <usesSampleType rdf:resource="#Urine"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Negative</hasNormalRange>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#VANCOMYCIN_(Peak_&amp;_Trough)">
+  <rdf:type rdf:resource="#LabTest"/>
+  <belongsTo rdf:resource="#CHEMISTRY_THERAPUTICE_DRUG_MONITORING"/>
+  <usesSampleType rdf:resource="#Plasma"/>
+  <usesSampleType rdf:resource="#Serum"/>
+  <hasNormalRange rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20-40</hasNormalRange>
+  <hasUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ug/mL</hasUnit>
+</owl:NamedIndividual>
+
+
+</rdf:RDF>
