@@ -1,0 +1,2141 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33/"
+     xml:base="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-33="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CategoryName -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CategoryName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#TestCategory"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#applied_to_vein_type -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#applied_to_vein_type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Vein_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#belongsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#belongsTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#TestCategory"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#description -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#description">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#hasName -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#hasName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#hasNormalRange -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#hasNormalRange">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#hasResult -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#hasResult">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#TestResult"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#hasUnit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#hasUnit">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#has_Gender -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#has_Gender">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Gender"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#isResultof -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#isResultof">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#TestResult"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#usesSampleType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#usesSampleType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#SampleType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#usesTestMethod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#usesTestMethod">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#TestMethod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CategoryName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CategoryName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#ResultValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#ResultValue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#TestResult"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#applied_to_Vein_Type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#applied_to_Vein_Type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Arterial</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Venous</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#description"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#hasName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#hasNormalRange -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#hasNormalRange"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#hasUnit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#hasUnit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#has_Gender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#has_Gender">
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Female</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Male</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#has_age_range -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#has_age_range">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#requiresFasting -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#requiresFasting">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Gender -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Gender">
+        <rdfs:comment>{&quot;Male&quot; , &quot;Female&quot;}</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Patient"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#SampleType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#SampleType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#TestCategory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#TestCategory"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#TestMethod -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#TestMethod"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#TestResult -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#TestResult"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Vein_Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Vein_Type"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#langString -->
+
+    <owl:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#AFP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#AFP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_CANCER_IMMUNOASSAY"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>0.89-8.78</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>ng/mL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#ALANINE_AMINOTRANSFERASE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#ALANINE_AMINOTRANSFERASE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male_and_Femal"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>0-55</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>U/L</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#ALBUMIN -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#ALBUMIN">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male_and_Femal"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>3.5-5.2</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>g/DI</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#ALKALINE_PHSOPHATASE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#ALKALINE_PHSOPHATASE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male_and_Femal"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>40-150</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>U/L</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#AMYLASE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#AMYLASE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male_and_Femal"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>25-125</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>U/L</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#ANTI-CCР -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#ANTI-CCР">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_INFLAMMATORY_DISORDER_-_IMMUNOASSAY"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>0-5</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>U/mL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#ANTI-TG -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#ANTI-TG">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_PROTEIN"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>0-4.11</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>IU/mL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#ANTI-TPО -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#ANTI-TPО">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_PROTEIN"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasUnit>0-5.61</untitled-ontology-33:hasUnit>
+        <untitled-ontology-33:hasUnit>IU/mL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#ASO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#ASO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_PROTEIN"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>&lt;50.0</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>IU/mL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#ASPARATE_AMINOTRANSFERASE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#ASPARATE_AMINOTRANSFERASE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male_and_Femal"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>5-34</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>U/L</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Ammonia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Ammonia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male_and_Femal"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Plasma"/>
+        <untitled-ontology-33:hasNormalRange>31-123</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>ug/dL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#BLADDER_URINE_-_URETER_SUPRAPUBIC_-_CYSTOSCOPIC_URINE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#BLADDER_URINE_-_URETER_SUPRAPUBIC_-_CYSTOSCOPIC_URINE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#MICROALBUMINE"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Urine"/>
+        <untitled-ontology-33:hasNormalRange>No growth</untitled-ontology-33:hasNormalRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#BNP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#BNP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_BONE_DISEASE_IMMUNOASSAY"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Plasma"/>
+        <untitled-ontology-33:hasNormalRange>&lt;100
+&gt; or equal 100</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>pg/ml</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#B_HCG -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#B_HCG">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_FERTILITY_/_PREGNANCY_IMMUNOASSAY"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Female"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>&lt; 5.00</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>mIU/mL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Blood -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Blood">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#SampleType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#BloodGlucoseTest -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#BloodGlucoseTest">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#MetabolicPanel"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Blood"/>
+        <untitled-ontology-33:usesTestMethod rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Spectrophotometry"/>
+        <untitled-ontology-33:hasName>BloodGlucose</untitled-ontology-33:hasName>
+        <untitled-ontology-33:hasNormalRange>70-110</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>mg/dL</untitled-ontology-33:hasUnit>
+        <untitled-ontology-33:requiresFasting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-33:requiresFasting>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#C-PEPTIDE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#C-PEPTIDE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_ANEMIA-METABOLIC_IMMUNOASSAY"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Plasma"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>0-5.19</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>ng/mL</untitled-ontology-33:hasUnit>
+        <untitled-ontology-33:requiresFasting>8-12</untitled-ontology-33:requiresFasting>
+        <untitled-ontology-33:requiresFasting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-33:requiresFasting>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#C-PEPTIDES -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#C-PEPTIDES">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_BONE_DISEASE_IMMUNOASSAY"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Plasma"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>0-5.191</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>ng/mL</untitled-ontology-33:hasUnit>
+        <untitled-ontology-33:requiresFasting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-33:requiresFasting>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#C3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#C3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_INFLAMMATORY_DISORDER"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>0.82-1.85</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>g/L</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#C4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#C4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_INFLAMMATORY_DISORDER"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>0.15-0.53</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>g/L</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CA125 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CA125">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_CANCER_IMMUNOASSAY"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>0-35</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>U/mL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CA19-9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CA19-9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_CANCER_IMMUNOASSAY"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>0-37</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>U/mL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CALCIUM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CALCIUM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male_and_Femal"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>8.4-10.2</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>mg/dL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CALPROTECTIN -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CALPROTECTIN">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_PROTEIN"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Stool_feces"/>
+        <untitled-ontology-33:hasNormalRange>&lt;50</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>µg/g</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CARBAMAZEPINE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CARBAMAZEPINE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_THERAPUTICE_DRUG_MONITORING"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Plasma"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>4-12</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>ug/mL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CA_15-3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CA_15-3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_CANCER_IMMUNOASSAY"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>0-31.3</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>U/mL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CEA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CEA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_CANCER_IMMUNOASSAY"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>0-5</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>ng/mL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CEREBROSPINAL_FLUID_GRAM_STAIN -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CEREBROSPINAL_FLUID_GRAM_STAIN">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#MICROALBUMINE"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Cerebrospinal_Fluid"/>
+        <untitled-ontology-33:hasNormalRange>No microorganism</untitled-ontology-33:hasNormalRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_ANEMIA-METABOLIC_IMMUNOASSAY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_ANEMIA-METABOLIC_IMMUNOASSAY">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#TestCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_BONE_DISEASE_IMMUNOASSAY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_BONE_DISEASE_IMMUNOASSAY">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#TestCategory"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_BONE_DISEASE_IMMUNOASSAY"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Urine"/>
+        <untitled-ontology-33:hasNormalRange>0-30</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>ug/mL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_CANCER_IMMUNOASSAY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_CANCER_IMMUNOASSAY">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#TestCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#TestCategory"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male_and_Femal"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>8-78</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>U/L</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_INFLAMMATORY_DISORDER -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_INFLAMMATORY_DISORDER">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#TestCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_INFLAMMATORY_DISORDER_-_IMMUNOASSAY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_INFLAMMATORY_DISORDER_-_IMMUNOASSAY">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#TestCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_PROTEIN -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_PROTEIN">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#TestCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_THERAPUTICE_DRUG_MONITORING -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_THERAPUTICE_DRUG_MONITORING">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#TestCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHOLESTEROL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHOLESTEROL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male_and_Femal"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>&lt;200</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>mmol/L</untitled-ontology-33:hasUnit>
+        <untitled-ontology-33:requiresFasting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-33:requiresFasting>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CK-MB_F -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CK-MB_F">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_CANCER_IMMUNOASSAY"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Plasma"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>0-3.1</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>ng/mL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CK-MB__M -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CK-MB__M">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_CANCER_IMMUNOASSAY"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Plasma"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasUnit>0-5.2</untitled-ontology-33:hasUnit>
+        <untitled-ontology-33:hasUnit>ng/mL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CK_F -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CK_F">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_CANCER_IMMUNOASSAY"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Plasma"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>29-1</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>U/L</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CK_M -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CK_M">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_CANCER_IMMUNOASSAY"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Plasma"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>30-200</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>U/L</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CLORIDE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CLORIDE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male_and_Femal"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>98-107</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>mmol/L</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CORTISOL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CORTISOL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_ANEMIA-METABOLIC_IMMUNOASSAY"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Plasma"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>3.7 -19.4</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>ug/dL</untitled-ontology-33:hasUnit>
+        <untitled-ontology-33:requiresFasting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-33:requiresFasting>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CREATINE_KINASE_F -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CREATINE_KINASE_F">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Female"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>29-168</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>U/L</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CREATINE_KINASE_M -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CREATINE_KINASE_M">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>30-200</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>U/L</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CREATININE_24Hrs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CREATININE_24Hrs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_BONE_DISEASE_IMMUNOASSAY"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Urine"/>
+        <untitled-ontology-33:hasNormalRange>710-1650</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>mg/24h</untitled-ontology-33:hasUnit>
+        <untitled-ontology-33:requiresFasting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-33:requiresFasting>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CREATININE_CLEARANCE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CREATININE_CLEARANCE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_BONE_DISEASE_IMMUNOASSAY"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>66-163</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>mL/min</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CREATININE_F -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CREATININE_F">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_ANEMIA-METABOLIC_IMMUNOASSAY"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>[0.72-1.25]</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>mg/dL</untitled-ontology-33:hasUnit>
+        <untitled-ontology-33:requiresFasting>fulse</untitled-ontology-33:requiresFasting>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CREATININE_M -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CREATININE_M">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_BONE_DISEASE_IMMUNOASSAY"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Urine"/>
+        <untitled-ontology-33:hasNormalRange>63-166</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>mg/dL</untitled-ontology-33:hasUnit>
+        <untitled-ontology-33:requiresFasting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-33:requiresFasting>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CRP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CRP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_INFLAMMATORY_DISORDER"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Plasma"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>&lt;0.5</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>mg/dL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CSF -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CSF">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#SampleType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Cerebrospinal_Fluid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Cerebrospinal_Fluid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#SampleType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Chloride-C.S.F -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Chloride-C.S.F">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male_and_Femal"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CSF"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Cholesterol_-_Pleural_Fluid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Cholesterol_-_Pleural_Fluid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male_and_Femal"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Pleural_fluid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Cyclosporin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Cyclosporin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_THERAPUTICE_DRUG_MONITORING"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Whole_blood"/>
+        <untitled-ontology-33:hasNormalRange>100-300</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>ng/ml</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#DIGOXIN -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#DIGOXIN">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_THERAPUTICE_DRUG_MONITORING"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Plasma"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>0.8-2</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>ng/mL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#DIRECT_BILIRUBIN -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#DIRECT_BILIRUBIN">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male_and_Femal"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>0-0.5</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>mg/dL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#DIRECT_LDL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#DIRECT_LDL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male_and_Femal"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>= &lt; 100</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>mg/dL</untitled-ontology-33:hasUnit>
+        <untitled-ontology-33:requiresFasting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-33:requiresFasting>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#ESTRADIOL_F -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#ESTRADIOL_F">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_FERTILITY_/_PREGNANCY_IMMUNOASSAY"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Female"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>21–251</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>pg/mL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#ESTRADIOL_M -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#ESTRADIOL_M">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_FERTILITY_/_PREGNANCY_IMMUNOASSAY"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>11-44</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>pg/mL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#FERRITIN_F -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#FERRITIN_F">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_THERAPUTICE_DRUG_MONITORING"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Plasma"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>4.63-204.0</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>ng/mL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#FERRITIN_M -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#FERRITIN_M">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_ANEMIA-METABOLIC_IMMUNOASSAY"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Plasma"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>21.81-274.66</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>ng/mL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#FOLIC_ACID -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#FOLIC_ACID">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_ANEMIA-METABOLIC_IMMUNOASSAY"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Plasma"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>3.1-20.5</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>ng/mL</untitled-ontology-33:hasUnit>
+        <untitled-ontology-33:requiresFasting>8-12</untitled-ontology-33:requiresFasting>
+        <untitled-ontology-33:requiresFasting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-33:requiresFasting>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#FREE_T4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#FREE_T4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_PROTEIN"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Plasma"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>0.7-1.48</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>ng/dL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#FSH_F -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#FSH_F">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_FERTILITY_/_PREGNANCY_IMMUNOASSAY"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Female"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>3.03–8.08</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>mIU/mL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#FSH_M -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#FSH_M">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_FERTILITY_/_PREGNANCY_IMMUNOASSAY"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>0.95-11.95</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>mIU/mL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Female -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Female">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Gender"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#GAMMA-GLUTAMYL_TRANS_FERASE_F -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#GAMMA-GLUTAMYL_TRANS_FERASE_F">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Female"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>9-36</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>U/L</untitled-ontology-33:hasUnit>
+        <untitled-ontology-33:requiresFasting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-33:requiresFasting>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#GAMMA-GLUTAMYL_TRANS_FERASE_M -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#GAMMA-GLUTAMYL_TRANS_FERASE_M">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>12-64</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>U/L</untitled-ontology-33:hasUnit>
+        <untitled-ontology-33:requiresFasting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-33:requiresFasting>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Glucose_C.S.F -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Glucose_C.S.F">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male_and_Femal"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Cerebrospinal_Fluid"/>
+        <untitled-ontology-33:hasNormalRange>40–70</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>mg/dL</untitled-ontology-33:hasUnit>
+        <untitled-ontology-33:requiresFasting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-33:requiresFasting>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#HbA1c -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#HbA1c">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_BONE_DISEASE_IMMUNOASSAY"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>&lt;5.7%(Normal)
+5.7%-6.4%(Prediabetes)
+6.5% or above(Diabetes)</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>%</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#IGE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#IGE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_INFLAMMATORY_DISORDER"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>1-100</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>IU/mL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#INSULIN -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#INSULIN">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_BONE_DISEASE_IMMUNOASSAY"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Plasma"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>2.6-24.9</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>uU/mL</untitled-ontology-33:hasUnit>
+        <untitled-ontology-33:requiresFasting>ture</untitled-ontology-33:requiresFasting>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#INTACT_PTH -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#INTACT_PTH">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_BONE_DISEASE_IMMUNOASSAY"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Plasma"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>0-68.3</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>pg/mL</untitled-ontology-33:hasUnit>
+        <untitled-ontology-33:requiresFasting>8-12</untitled-ontology-33:requiresFasting>
+        <untitled-ontology-33:requiresFasting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-33:requiresFasting>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#IRON_F -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#IRON_F">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Female"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>50-170</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>ug/dL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#IRON_M -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#IRON_M">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>65-175</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>ug/dL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LACTATE_DEHYDROGENASE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LACTATE_DEHYDROGENASE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male_and_Femal"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>125-220</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>U/L</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LACTIC_ACID -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LACTIC_ACID">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male_and_Femal"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Plasma"/>
+        <untitled-ontology-33:hasNormalRange>0.5-2.2</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>mmol/L</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LDH-C.S.F -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LDH-C.S.F">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Cerebrospinal_Fluid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LH_F -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LH_F">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_FERTILITY_/_PREGNANCY_IMMUNOASSAY"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Female"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>1.8–11.78</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>mIU/mL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LH_M -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LH_M">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_FERTILITY_/_PREGNANCY_IMMUNOASSAY"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>0.57-12.07</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>mIU/mL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LIPASE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LIPASE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male_and_Femal"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>8-78</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>U/L</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#MAGNISIUM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#MAGNISIUM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male_and_Femal"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>1.6-2.6</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>mg/dL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#MEASLES_ABS_IGG -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#MEASLES_ABS_IGG">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_PROTEIN"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>13.5 negative</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>AU/mL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#MICROALBUMINE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#MICROALBUMINE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_BONE_DISEASE_IMMUNOASSAY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#MUMPS_IGG -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#MUMPS_IGG">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_PROTEIN"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>9.0 negative</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>AU/mL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Gender"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male_and_Femal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male_and_Femal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Gender"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#MetabolicPanel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#MetabolicPanel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#TestCategory"/>
+        <untitled-ontology-33:requiresFasting>MetabolicPanel</untitled-ontology-33:requiresFasting>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Osmolality_Serum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Osmolality_Serum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male_and_Femal"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>285-295</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>mOsm/kg</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#PCT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#PCT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_INFLAMMATORY_DISORDER_-_IMMUNOASSAY"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Plasma"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>&lt; 0.1</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>ng/ml</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#PHENOBARBITAL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#PHENOBARBITAL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_THERAPUTICE_DRUG_MONITORING"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Plasma"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>15.0-40.0</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>ug/mL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#PHENYTOIN -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#PHENYTOIN">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_THERAPUTICE_DRUG_MONITORING"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Plasma"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>10.0-20.0</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>ug/mL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#PHOSPHORUS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#PHOSPHORUS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male_and_Femal"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>2.5-4.5</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>mg/dL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#POTASSIUM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#POTASSIUM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male_and_Femal"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>3.5-5.1</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>mmol/L</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#PROGESTERONE_F -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#PROGESTERONE_F">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_FERTILITY_/_PREGNANCY_IMMUNOASSAY"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Female"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>&lt;0.1-0.3</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>ng/mL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#PROGESTERONE_M -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#PROGESTERONE_M">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_FERTILITY_/_PREGNANCY_IMMUNOASSAY"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>0.1-0.2</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>ng/mL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#PROLACTIN_F -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#PROLACTIN_F">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_FERTILITY_/_PREGNANCY_IMMUNOASSAY"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>0.25-2.75</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>ng/dL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#PROLACTIN_M -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#PROLACTIN_M">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_FERTILITY_/_PREGNANCY_IMMUNOASSAY"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>3.46-19.4</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>ng/mL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#PSA-FREE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#PSA-FREE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_CANCER_IMMUNOASSAY"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>0-0.5</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>ng/mL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Plasma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Plasma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#SampleType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Pleural_fluid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Pleural_fluid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#SampleType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Protein_C.S.F -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Protein_C.S.F">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male_and_Femal"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Cerebrospinal_Fluid"/>
+        <untitled-ontology-33:hasNormalRange>15 – 40</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>mg/dL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#SODIUM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#SODIUM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male_and_Femal"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>136-145</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>mmol/L</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#SampleType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Spectrophotometry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Spectrophotometry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#TestMethod"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Sperm_Normal_Morphology -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Sperm_Normal_Morphology">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#MICROALBUMINE"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>&gt;=4%</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>%</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Sperm_Progressive_Motility -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Sperm_Progressive_Motility">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#MICROALBUMINE"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>&gt;32%</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>%</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Sperm_Total_Motility -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Sperm_Total_Motility">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#MICROALBUMINE"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>&gt;40%</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>%</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Stool_feces -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Stool_feces">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#SampleType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#TACROLIMUS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#TACROLIMUS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_THERAPUTICE_DRUG_MONITORING"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Whole_blood"/>
+        <untitled-ontology-33:hasNormalRange>2-16</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>ng/ml</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#TERSTERONE_F -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#TERSTERONE_F">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_FERTILITY_/_PREGNANCY_IMMUNOASSAY"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Female"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>0.25-2.75</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>ng/dL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#TERSTERONE_M -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#TERSTERONE_M">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_FERTILITY_/_PREGNANCY_IMMUNOASSAY"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>1.6-34.0</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>ng/dL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#THEOPHYLINE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#THEOPHYLINE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_THERAPUTICE_DRUG_MONITORING"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Plasma"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>10-20</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>ug/mL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#TOTAL_BILIRUBIN -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#TOTAL_BILIRUBIN">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male_and_Femal"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>0.2-1.2</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>mg/dL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#TOTAL_PROTEIN -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#TOTAL_PROTEIN">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male_and_Femal"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>6-8</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>g/dL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#TRIGLYCERIDES -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#TRIGLYCERIDES">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male_and_Femal"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>150-199</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>mg/dL</untitled-ontology-33:hasUnit>
+        <untitled-ontology-33:requiresFasting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-33:requiresFasting>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#TSH -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#TSH">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_PROTEIN"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Plasma"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>0.35-54.94</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>ulU/ml</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#UIBC__TIBC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#UIBC__TIBC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male_and_Femal"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>250-400</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>ug/dL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#ULTRA_HDL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#ULTRA_HDL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male_and_Femal"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>40–59</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>mg/dL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#UREANITROGEN_F -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#UREANITROGEN_F">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Female"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>9.8-20.1</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>mg/dL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#UREANITROGEN_M -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#UREANITROGEN_M">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>8.4-25.7</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>mg/dL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#URIC_ACID_F -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#URIC_ACID_F">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Female"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>2.6-6</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>mg/dL</untitled-ontology-33:hasUnit>
+        <untitled-ontology-33:requiresFasting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-33:requiresFasting>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#URIC_ACID_M -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#URIC_ACID_M">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>3.5-7.2</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>mg/dL</untitled-ontology-33:hasUnit>
+        <untitled-ontology-33:requiresFasting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-33:requiresFasting>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#URINE_CALCIUM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#URINE_CALCIUM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male_and_Femal"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Urine"/>
+        <untitled-ontology-33:hasNormalRange>100-300</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>mg/24h</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#URINE_Protein -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#URINE_Protein">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male_and_Femal"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Urine"/>
+        <untitled-ontology-33:hasNormalRange>1–14</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>mg/dL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#URINE_SODIUM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#URINE_SODIUM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male_and_Femal"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Urine"/>
+        <untitled-ontology-33:hasNormalRange>41-118</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>mmol/L</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Urine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Urine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#SampleType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#VALPROIC_ACID -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#VALPROIC_ACID">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_THERAPUTICE_DRUG_MONITORING"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Plasma"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>&lt; 30 minutes (50-100)</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>ug/mL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#VARICELLA_ZOSTER_IGG_ABS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#VARICELLA_ZOSTER_IGG_ABS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_PROTEIN"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>&gt;150 graded negative.</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>mlU/mLL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#VITAMINE_D -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#VITAMINE_D">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_ANEMIA-METABOLIC_IMMUNOASSAY"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Plasma"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>20-50</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>ng/mL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#VITAMIN_B12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#VITAMIN_B12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_ANEMIA-METABOLIC_IMMUNOASSAY"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Plasma"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>187-883</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>pg/mL</untitled-ontology-33:hasUnit>
+        <untitled-ontology-33:requiresFasting>8-12</untitled-ontology-33:requiresFasting>
+        <untitled-ontology-33:requiresFasting rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-33:requiresFasting>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Whole_blood -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Whole_blood">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#SampleType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#ZINC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#ZINC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male_and_Femal"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>46-150</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>ug/dL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#free_T3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#free_T3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_PROTEIN"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Plasma"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>1.71-3.71</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>pg/mL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_FERTILITY_/_PREGNANCY_IMMUNOASSAY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_FERTILITY_/_PREGNANCY_IMMUNOASSAY">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#TestCategory"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_FERTILITY_/_PREGNANCY_IMMUNOASSAY"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Female"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Urine"/>
+        <untitled-ontology-33:hasNormalRange>&lt; 5.0</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>mIU/mL:</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#GENTAMICIN_(Peak_&amp;_Trough) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#GENTAMICIN_(Peak_&amp;_Trough)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_THERAPUTICE_DRUG_MONITORING"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Plasma"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>Trough range: 0.5-2.0</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>ug/mL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LDH_–_Pleural_Fluid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LDH_–_Pleural_Fluid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male_and_Femal"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Pleural_fluid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#POTASSIUM,_RANDOM_URINE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#POTASSIUM,_RANDOM_URINE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male_and_Femal"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Urine"/>
+        <untitled-ontology-33:hasNormalRange>0-20</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>mmol/L</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Protein_–_Pleural_Fluid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Protein_–_Pleural_Fluid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male_and_Femal"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Pleural_fluid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Sperm_Count/ml -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Sperm_Count/ml">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#MICROALBUMINE"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>&gt;= 15 million/ml</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>ml</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Sperm_Count_/_ejaculate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Sperm_Count_/_ejaculate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#MICROALBUMINE"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>&gt;= 39 million/ejaculate</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>ejaculate</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#TROP_I_(HIGH_SENSITIVE)_M -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#TROP_I_(HIGH_SENSITIVE)_M">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_CANCER_IMMUNOASSAY"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Plasma"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>0-34.2</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>pg/mL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#TROP_I_(HIGH_SENSITIVE)__F -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#TROP_I_(HIGH_SENSITIVE)__F">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_CANCER_IMMUNOASSAY"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Plasma"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>0-15.6</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>pg/mL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#UREA,_24_HOURS_URINE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#UREA,_24_HOURS_URINE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male_and_Femal"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Urine"/>
+        <untitled-ontology-33:hasNormalRange>12-20</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>g/day</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#URIC_ACID,_24_HOURS_URINE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#URIC_ACID,_24_HOURS_URINE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_GENERAL"/>
+        <untitled-ontology-33:has_Gender rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Male_and_Femal"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Urine"/>
+        <untitled-ontology-33:hasNormalRange>250-750</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>mg/day</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#URINE_CULTURE_MSU_/_CSU_(C_URINE) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#URINE_CULTURE_MSU_/_CSU_(C_URINE)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#MICROALBUMINE"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Urine"/>
+        <untitled-ontology-33:hasNormalRange>No growth</untitled-ontology-33:hasNormalRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#URINE_for_CANDIDA_(C_URINE) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#URINE_for_CANDIDA_(C_URINE)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#MICROALBUMINE"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Urine"/>
+        <untitled-ontology-33:hasNormalRange>Negative</untitled-ontology-33:hasNormalRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#VANCOMYCIN_(Peak_&amp;_Trough) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#VANCOMYCIN_(Peak_&amp;_Trough)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#LabTest"/>
+        <untitled-ontology-33:belongsTo rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#CHEMISTRY_THERAPUTICE_DRUG_MONITORING"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Plasma"/>
+        <untitled-ontology-33:usesSampleType rdf:resource="http://www.semanticweb.org/aoustaff3/ontologies/2025/3/untitled-ontology-33#Serum"/>
+        <untitled-ontology-33:hasNormalRange>20-40</untitled-ontology-33:hasNormalRange>
+        <untitled-ontology-33:hasUnit>ug/mL</untitled-ontology-33:hasUnit>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
